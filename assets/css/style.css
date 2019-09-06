@@ -1,0 +1,46 @@
+body {
+
+    background-image: url("https://www.desktopbackground.org/t/2015/04/30/940815_harry-potter-film-tours_1024x768_h.png");
+}
+
+#gameSection {
+    margin-bottom: 250px;
+}
+
+div.timer {
+
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	color: white;
+}
+
+div.start {
+
+	display: block;
+}
+
+div.trivia {
+
+	display: none;
+	color: white;
+}
+
+div.answer {
+
+	display: none;
+	color: white;
+	text-align: center;
+}
+
+div.timeup {
+
+	display: none;
+	color: white;
+	text-align: center;
+}
+
+div.results {
+    color:white;
+	display: none;
+}

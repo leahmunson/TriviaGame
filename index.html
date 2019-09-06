@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Harry Potter Trivia</title>
+
+	<!-- Reset CSS -->
+	<!-- <link rel="stylesheet" type="text/css" href="assets/css/reset.css"> -->
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Styling -->
+	<link rel="stylesheet" type="text/css" href="assets/css/style.css">
+
+	 <!-- JQuery -->
+  	<script src="https://code.jquery.com/jquery.js"></script>
+
+</head>
+<body>
+
+	
+
+	<div class="container-fluid">
+
+		<!-- TITLE SECTION -->
+		<div class="jumbotron" id="gameTitle">
+
+			<img src="https://prmrocks.org/wp-content/uploads/2019/08/trivia-logo.jpg" class="img-responsive center-block" id="titleImage" alt="Harry Potter Trivia">
+			
+		</div>
+		
+		<!-- GAME SECTION -->
+		<div class="row" id="gameSection">
+
+			<!-- Timer Row -->
+			<div class="row timer"><h1>Time Remaining: 30 seconds</h1></div>
+
+			<div class="col-md-3" id="spacer"></div>
+
+
+			<!-- Start Screen -->
+			<div class="col-md-6 start" id="gameBox startScreen" >
+
+				<!-- First Row -->
+				<div class="row">
+					
+					<button type="button" class="btn btn-default btn-lg btn-block" id="startButton"><h1>Start</h1></button>
+
+				</div>
+                <div class= "row">
+                 <img src= "https://media.giphy.com/media/26gN27K98gXfnvEJy/giphy.gif"  class="img-responsive center-block" id="start screen image" alt ="excited">
+            </div>
+
+			</div>
+
+			<!-- Trivia Game Screen -->
+			<div class="col-md-6 trivia" id="gameBox triviaScreen">
+
+				<!-- Question Row -->
+				<div class="row" id="firstRow questionRow">
+
+					<h2 id="questions">This is where the questions will go</h2>
+
+				</div>
+
+				<!-- Choices Row -->
+				<div class="row" id="secondRow choicesRow">
+
+					<button type="button" class="btn btn-default btn-lg btn-block tButton" id="button-1" value="A">	
+					</button>
+
+					<button type="button" class="btn btn-default btn-lg btn-block tButton" id="button-2" value="B">
+					</button>
+
+					<button type="button" class="btn btn-default btn-lg btn-block tButton" id="button-3" value="C">
+					</button>
+
+					<button type="button" class="btn btn-default btn-lg btn-block tButton" id="button-4" value="D">		
+					</button>
+					
+				</div>
+				
+			</div>
+
+			<!-- Answer Screen -->
+			<div class="col-md-6 answer" id="gameBox answerScreen">
+				
+				<!-- Answer Row -->
+				<div class="row" id="firstRow answersRow">
+
+					<h2 id="answers">This is where the answers will go</h2>
+					
+				</div>
+
+				<!-- Image Row -->
+				<div class="row" id="secondRow imageRow">
+					
+					<img src="http://fpoimg.com/300x300" class="img-responsive center-block answerImage" id="answerImage" alt="answer">
+
+				</div>
+
+			</div>
+
+			<!-- Time's Up Screen -->
+			<div class="col-md-6 timeup" id="gameBox timeupScreen">
+				
+				<!-- Time Up Row -->
+				<div class="row" id="firstRow timeupRow">
+
+					<h2 id="timeup">Time's up!</h2>
+					
+				</div>
+
+				<!-- Image Row -->
+				<div class="row" id="secondRow imageRow">
+					
+					<img src="https://media.giphy.com/media/720g7C1jz13wI/giphy.gif" class="img-responsive center-block" id="timeupImage" alt="timeup">
+
+				</div>
+
+			</div>
+
+			<!-- Results Screen -->
+			<div class="col-md-6 results" id="gameBox resultScreen">
+				
+				<!-- Answer Row -->
+				<div class="row" id="firstRow resultRow">
+
+					<h2 id="timeup">Look at how you did!</h2>
+
+					<div class="col-md-4">
+							<h4 id="correct"><i class="fa fa-check" aria-hidden="true"></i> Correct Answers: </h4>
+					</div>
+					<div class="col-md-4">	
+						<h4 id="incorrect"><i class="fa fa-times" aria-hidden="true"></i> Incorrect Answers: </h4>
+					</div>
+					<div class="col-md-4">	
+						<h4 id="unanswered"><i class="fa fa-hourglass-end" aria-hidden="true"></i> Unanswered: </h4>
+					</div>
+					
+				</div>
+
+				<!-- Restart Row -->
+				<div class="row" id="secondRow restartRow">
+					
+					<img src="https://media.giphy.com/media/49LAhsDQRAcus/giphy.gif" class="img-responsive center-block" id="restartImage" alt="restart">
+					<button type="button" class="btn btn-default btn-lg btn-block restartBtn" id="restartButton"><h3>Play Again?</h3></button>
+
+				</div>
+
+			</div>
+
+		</div>
+	</div>
+
+</body>
+<script src="assets/javascript/app.js"></script>
+</html>
